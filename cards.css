@@ -1,0 +1,50 @@
+.cards > div::before,
+.cards > div::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 342px;
+  width: calc(100% - 8px);
+  height: 4px;
+  transform-origin: top left;
+}
+.cards > div::before {
+  left: 4px;
+  transform: skew(-45deg);
+}
+.cards > div::after {
+  right: 4px;
+  transform: skew(45deg);
+}
+
+#card-1::before {
+  background-color: var(--primary-cyan);
+}
+
+#card-1::after {
+  background-color: var(--primary-cyan);
+}
+
+#card-2::before {
+  background-color: var(--primary-red);
+}
+
+#card-2::after {
+  background-color: var(--primary-red);
+}
+
+#card-3::before {
+  background-color: var(--primary-yellow);
+}
+
+#card-3::after {
+  background-color: var(--primary-yellow);
+}
+
+#card-4::before {
+  background-color: var(--primary-blue);
+}
+
+#card-4::after {
+  background-color: var(--primary-blue);
+}
